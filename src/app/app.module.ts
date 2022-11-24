@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PatiantEntryComponent } from './patiant-entry/patiant-entry.component';
 import { PatiantSearchComponent } from './patiant-search/patiant-search.component';
 import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.component';
+import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

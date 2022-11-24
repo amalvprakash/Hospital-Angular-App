@@ -8,6 +8,7 @@ import { PatiantSearchComponent } from './patiant-search/patiant-search.componen
 import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { PatiantListComponent } from './patiant-list/patiant-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes =[
   {
@@ -25,6 +26,10 @@ const myRoute:Routes =[
   {
     path:"list",
     component:PatiantListComponent
+  },
+  {
+    path:"navbar",
+    component:NavbarComponent
   }
 ]
 
@@ -34,7 +39,8 @@ const myRoute:Routes =[
     PatiantEntryComponent,
     PatiantSearchComponent,
     PatiantDeleteComponent,
-    PatiantListComponent
+    PatiantListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

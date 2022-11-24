@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PatiantEntryComponent } from './patiant-entry/patiant-entry.component';
 import { PatiantSearchComponent } from './patiant-search/patiant-search.component';
+import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PatiantEntryComponent,
-    PatiantSearchComponent
+    PatiantSearchComponent,
+    PatiantDeleteComponent
   ],
   imports: [
     BrowserModule,

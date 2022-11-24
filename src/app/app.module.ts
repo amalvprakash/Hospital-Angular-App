@@ -6,9 +6,22 @@ import { AppComponent } from './app.component';
 import { PatiantEntryComponent } from './patiant-entry/patiant-entry.component';
 import { PatiantSearchComponent } from './patiant-search/patiant-search.component';
 import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.component';
-import { RouterModule } from '@angular/router';
+import { Route, RouterModule, Routes } from '@angular/router';
 
-
+const myRoute:Routes =[
+  {
+    path:"",
+    component:PatiantEntryComponent
+  },
+  {
+    path:"search",
+    component:PatiantSearchComponent
+  },
+  {
+    path:"delete",
+    component:PatiantDeleteComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -20,7 +33,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

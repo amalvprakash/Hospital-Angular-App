@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-patiant-search',
+  selector: 'app-patiant-entry',
   templateUrl: './patiant-entry.component.html',
   styleUrls: ['./patiant-entry.component.css']
 })

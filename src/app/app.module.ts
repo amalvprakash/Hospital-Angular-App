@@ -9,6 +9,7 @@ import { PatiantDeleteComponent } from './patiant-delete/patiant-delete.componen
 import { Route, RouterModule, Routes } from '@angular/router';
 import { PatiantListComponent } from './patiant-list/patiant-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes =[
   {
@@ -45,7 +46,8 @@ const myRoute:Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

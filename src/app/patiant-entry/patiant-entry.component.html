@@ -7,34 +7,34 @@
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patiant Name</label>
-                    <input type="text" class="form-control">
+                    <input name="pNAme" [(ngModel)]="pNAme" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patiant Id</label>
-                    <input type="text" class="form-control">
+                    <input name="pId" [(ngModel)]="pId" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Patiant Address</label>
-                    <input type="text" class="form-control">
+                    <input name="pAddress" [(ngModel)]="pAddress" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Contact Number</label>
-                    <input type="text" class="form-control">
+                    <input name="contactNumber" [(ngModel)]="contactNumber" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Appointment</label>
-                    <input type="text" class="form-control">
+                    <input name="dateOfAppointment" [(ngModel)]="dateOfAppointment" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patiant Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input name="pImage" [(ngModel)]="pImage" type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Doctor Name</label>
-                    <input type="text"class="form-control">
+                    <input name="docName" [(ngModel)]="docName" type="text"class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="pEntry()" class="btn btn-primary">Submit</button>
                 </div>
 
             </div>

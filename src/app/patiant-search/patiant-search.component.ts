@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./patiant-search.component.css']
 })
 export class PatiantSearchComponent {
+  search = ""
 
+  Search = () => {
+    let data:any = {
+      "search":this.search
+    }
+    console.log(data)
+  }
 }
